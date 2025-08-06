@@ -155,6 +155,13 @@ header {
 	margin: 30px;
 }
 
+.gallery img {
+  height: 60%;
+  width: 20%;
+  border: 1px solid;
+  margin: 10px;
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -208,5 +215,10 @@ header {
   .about_me {
     text-align: center;
     margin: 10px;
+  }
+
+  .gallery img {
+    height: 40%;
+    width: 40%;
   }
 }
