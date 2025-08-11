@@ -267,6 +267,7 @@ header {
   }
 
   .buttons ul {justify-content: center;}
+  .buttons a {display: flex; text-align: center;}
 
   .container_post {
     display: flex;
