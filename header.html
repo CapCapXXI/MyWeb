@@ -1,4 +1,20 @@
-<nav class="menu">
+<header class="header">
+  <div class="container_header">
+    <h1 id="header_text">MyWeb.com</h1>
+
+    <form action="search" class="search-box">
+      <input type="search" name="q" placeholder="Поиск..." class="search">
+    </form>
+  </div>
+
+    <button class="burger" aria-label="Открыть меню">
+      <span></span><span></span><span></span>
+    </button>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<nav class="mobile-menu" id="mobileMenu">
   <ul>
     <li class="item icon-home">
       <a href="index.html">Главная</a>
