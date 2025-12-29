@@ -124,6 +124,10 @@ header {
   list-style: none;
 }
 
+.mobile-menu li {
+  list-style: none;
+}
+
 .burger {
   background: none;
   border: none;
@@ -389,16 +393,17 @@ header {
     display: block;
     position: fixed;
     top: 0;
-    left: -260px;          /* спрятано слева */
+    right: -100%;         
     width: 260px;
     height: 100vh;
     background: #1a1f27;
-    transition: left 0.3s ease;
+    transition: right 0.3s ease;
     z-index: 1001;
+    font-size: 25px;
   }
 
   .mobile-menu.active {
-    left: 0;
+    right: 0;
   }
 
   .mobile-menu .menu {
