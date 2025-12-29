@@ -382,6 +382,7 @@ header {
 
   .burger {
     display: flex;
+    margin-right: 25px;
   }
 
   .mobile-menu {
