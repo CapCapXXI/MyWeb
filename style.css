@@ -405,6 +405,9 @@ header {
     transition: right 0.3s ease;
     z-index: 1001;
     
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    
     font-size: 20px;
     line-height: 1;
     letter-spacing: 0.143em;
@@ -469,7 +472,7 @@ header {
 
   .profile {
     flex-direction: column;
-    max-width: 445px;
+    width: 445px;
     padding: 15px;
     margin: 0px auto;
     margin-bottom: 20px;
