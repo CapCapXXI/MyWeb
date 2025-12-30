@@ -361,7 +361,7 @@ header {
   margin: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px), (orientation: landscape) and (max-width: 1024px) {
 
   .global_container {
     flex-direction: column;
@@ -469,7 +469,7 @@ header {
 
   .profile {
     flex-direction: column;
-    width: 95%;
+    width: 445px;
     padding: 15px;
     margin: 0px auto;
     margin-bottom: 20px;
@@ -529,7 +529,8 @@ header {
   
   .post {
     width: 90%;
-    margin-top: 2px;
+    margin: 0px auto;
+    margin-bottom: 20px;
   }
   
   .post p{
