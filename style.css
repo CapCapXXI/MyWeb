@@ -175,12 +175,10 @@ header {
   pointer-events: auto;
 }
 
-
 .mobile-menu,
 .overlay {
   display: none;
 }
-
 
 /* Иконки */
 .item a {
@@ -333,7 +331,7 @@ header {
   margin-top: 10px;
 }
 .post, ul {
-  margin-left: 15px;
+  /*! margin-left: 15px; */
 }
 
 .post_img {
@@ -415,13 +413,11 @@ header {
   
   .mobile-menu p {
     text-align: center;
-    margin-top: 8px;
     letter-spacing: .12em;
     font-size: 20px;
-    line-height: 43px;
-  }
+  } 
   
-    .mobile-menu li {
+   .mobile-menu li {
     display: flex;
     justify-content: center;
   }
