@@ -9,7 +9,7 @@ async function includeHeader() {
   if (!container) return;
 
   try {
-    const response = await fetch("/myweb/header.html");
+    const response = await fetch("/MyWeb/header.html");
     if (!response.ok) throw new Error("header.html not loaded");
     container.innerHTML = await response.text();
   } catch (err) {
@@ -23,7 +23,7 @@ async function includeMenu() {
   if (!container) return;
 
   try {
-    const response = await fetch("/myweb/menu.html");
+    const response = await fetch("/MyWeb/menu.html");
     if (!response.ok) throw new Error("menu.html not loaded");
     container.innerHTML = await response.text();
   } catch (err) {
@@ -49,4 +49,5 @@ document.addEventListener("click", (e) => {
     overlay.classList.remove("active");
   }
 });
+
 
