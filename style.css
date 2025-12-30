@@ -8,7 +8,7 @@ body {
 
 * {
   margin: 0;
-  /*! padding: 0; */
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -112,6 +112,11 @@ header {
   margin-bottom: 8px;
   font-family: sans-serif;
   letter-spacing: .12em;
+}
+
+.menu li {
+  display: flex;
+  justify-content: center;
 }
 
 .menu a {
@@ -256,10 +261,10 @@ header {
 }
 
 .ava {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border-radius: 100%;
-  margin-bottom: 10px;
+  /*! margin-bottom: 10px; */
 }
 
 .nickname {
@@ -395,6 +400,11 @@ header {
     display: flex;
     margin-right: 25px;
   }
+  
+  .inside {
+    padding-left: 200px;
+    margin-top: 20px
+  }
 
   .mobile-menu {
     display: block;
@@ -406,7 +416,10 @@ header {
     background: #1a1f27;
     transition: right 0.3s ease;
     z-index: 1001;
-    font-size: 18px;
+    
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.143em;
   }
   
   .mobile-menu p {
@@ -414,6 +427,12 @@ header {
     margin-top: 8px;
     letter-spacing: .12em;
     font-size: 20px;
+    line-height: 43px;
+  }
+  
+    .mobile-menu li {
+    display: flex;
+    justify-content: center;
   }
 
   .mobile-menu.active {
@@ -468,14 +487,32 @@ header {
     margin-bottom: 20px;
     text-align: center;
   }
+  
+  .profile h1 {
+    font-size: 35px;
+    line-height: 0.9;
+    letter-spacing: 0.072em;
+    font-weight: 900;
+  }
+  
+  prrofile h3 {
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: 0.039em;
+  }
 
-  .profile h4 {
-    text-align: center;
+  .profile p {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.098em;
+    font-weight: 400;
+    font-style: normal;
   }
 
   .ava {
-    width: 150px;
-    height: 150px;
+    width: 190px;
+    height: 190px;
+    margin-top: 15px;
   }
 
   .nickname {
@@ -504,6 +541,19 @@ header {
   .post {
     width: 90%;
     margin-top: 2px;
+  }
+  
+  .post p{
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.117em;
+  }
+  
+  .post ul {
+    font-size: 0.9em;
+    line-height: 1.5;
+    letter-spacing: 0.062em;
+    padding: 5px;
   }
 
   .gallery img {
