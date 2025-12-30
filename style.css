@@ -12,6 +12,14 @@ body {
   box-sizing: border-box;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background: #444;
+  margin: 20px 0;
+}
+
+
 .global_container {
   display: flex;
   gap: 20px;
@@ -232,12 +240,11 @@ header {
   fill: #9cc8ff;
 }
 
-
+/* Профиль */
 .container {
   width: 100%;
 }
 
-/* Профиль */
 .profile {
   background-color: #1a1f27;
   margin-top: 50px;
@@ -293,51 +300,17 @@ header {
 }
 
 /* Посты */
-.container_post {
+.line {
+  margin-left: 20px;
   margin-top: 50px;
-}
-.post p {
-  margin-top: 10px;
-}
-.post ul {
-  margin-left: 15px;
+  font-size: 27px;
+  line-height: 0.2;
+  letter-spacing: 0.089em;
+  font-weight: 600;
 }
 
-@keyframes movemove {
-  0% {opacity: 0;}
-  50% {opacity: 1.0;}
-  100% {opacity: 0;}
-}
-.status {
-  animation: movemove 10s infinite;
-}
-.status a {text-decoration: none; color: #ddd}
-
-.buttons {}
-
-.buttons ul {
-  margin-top: 15px;
-  list-style: none;
+.container_post {
   display: flex;
-  flex-direction: row;
-}
-
-.buttons li {
-  align-items: center;
-  margin-right: 20px;
-  padding: 5px;
-  border: 1px solid #ffffff;
-  border-radius: 30px;
-  font-size: 18px;
-}
-
-.buttons a {text-decoration: none; color: #ddd; margin: 3px;}
-.buttons a:hover {color: white;}
-.buttons li:hover {background-color: #2b3b4f}
-
-.container_post post {
-  display: flex;
-  left: 300px;
 }
 
 .post {
@@ -345,7 +318,22 @@ header {
   border-radius: 10px;
   padding: 20px;
   margin: 30px auto;
-  max-width: 100%;
+  max-width: 420px;
+  max-height: 480px;
+}
+
+.post_inside {
+  background-color: #1a1f27;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px auto;
+}
+
+.post, p {
+  margin-top: 10px;
+}
+.post, ul {
+  margin-left: 15px;
 }
 
 .post_img {
@@ -536,6 +524,7 @@ header {
 
   .container_post {
     margin-top: 0px;
+    flex-direction: column;
   }
   
   .post {

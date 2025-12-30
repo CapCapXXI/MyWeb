@@ -9,7 +9,7 @@ async function includeHeader() {
   if (!container) return;
 
   try {
-    const response = await fetch("header.html");
+    const response = await fetch("/header.html");
     if (!response.ok) throw new Error("header.html not loaded");
     container.innerHTML = await response.text();
   } catch (err) {
@@ -23,7 +23,7 @@ async function includeMenu() {
   if (!container) return;
 
   try {
-    const response = await fetch("menu.html");
+    const response = await fetch("/menu.html");
     if (!response.ok) throw new Error("menu.html not loaded");
     container.innerHTML = await response.text();
   } catch (err) {
@@ -49,24 +49,4 @@ document.addEventListener("click", (e) => {
     overlay.classList.remove("active");
   }
 });
-
-/* ---------- ARTICLE ---------- */
-async function loadArticle(path) {
-  try {
-    const response = await fetch(path);
-    if (!response.ok) throw new Error("Article not loaded");
-
-    document.getElementById("article-content").innerHTML =
-      await response.text();
-
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  } catch (err) {
-    console.error(err);
-  }
-}
-
-
-
-
-
 
