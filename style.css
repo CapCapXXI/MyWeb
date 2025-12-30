@@ -491,7 +491,7 @@ header {
   .profile h1 {
     font-size: 35px;
     line-height: 0.9;
-    letter-spacing: 0.072em;
+    letter-spacing: 0.07em;
     font-weight: 900;
   }
   
@@ -504,7 +504,7 @@ header {
   .profile p {
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.098em;
+    letter-spacing: 0.07em;
     font-weight: 400;
     font-style: normal;
   }
@@ -546,13 +546,13 @@ header {
   .post p{
     font-size: 14px;
     line-height: 1.4;
-    letter-spacing: 0.117em;
+    letter-spacing: 0.07em;
   }
   
   .post ul {
     font-size: 0.9em;
     line-height: 1.5;
-    letter-spacing: 0.062em;
+    letter-spacing: 0.03em;
     padding: 5px;
   }
 
