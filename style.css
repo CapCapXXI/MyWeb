@@ -232,6 +232,9 @@ hr {
 .icon-message a::before {
   background-image: url("web/icons/messages.svg");
 }
+.icon-github a::before {
+  background-image: url("web/icons/github.svg");
+}
 
 /* Профиль */
 .container {
