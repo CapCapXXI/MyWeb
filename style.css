@@ -515,15 +515,21 @@ hr {
     letter-spacing: 0.143em;
   }
   
+  .mobile-menu:focus {
+    background-color: rgba(255,255,255,0.08);
+    color: #9cc8ff;
+  }
+  
   .mobile-menu p {
-    text-align: center;
-    letter-spacing: .12em;
-    font-size: 20px;
+    font-size: 15px;
+    letter-spacing: .18em;
+    opacity: .6;
+    margin: 10px 0 6px 29px;
   } 
   
    .mobile-menu li {
     display: flex;
-    justify-content: center;
+    margin-left: 20px;
   }
 
   .mobile-menu.active {
