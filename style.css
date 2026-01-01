@@ -448,6 +448,35 @@ hr {
   margin: 10px;
 }
 
+/* Затемнённый фон */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 2000;
+}
+
+/* Активное состояние */
+.lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Картинка */
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+
 .censored {
   position: relative;
   display: inline-block; /* важно для точного размера */
@@ -663,11 +692,12 @@ hr {
   }
 
   .gallery {
-    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
   }
 
   .gallery img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 82px;
+    max-height: 90px;
   }
 }

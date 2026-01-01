@@ -9,7 +9,7 @@ async function includeHeader() {
   if (!container) return;
 
   try {
-    const response = await fetch("/MyWeb/header.html");
+    const response = await fetch("/header.html");
     if (!response.ok) throw new Error("header.html not loaded");
     container.innerHTML = await response.text();
   } catch (err) {
@@ -23,7 +23,7 @@ async function includeMenu() {
   if (!container) return;
 
   try {
-    const response = await fetch("/MyWeb/menu.html");
+    const response = await fetch("/menu.html");
     if (!response.ok) throw new Error("menu.html not loaded");
     container.innerHTML = await response.text();
   } catch (err) {
@@ -47,6 +47,22 @@ document.addEventListener("click", (e) => {
   if (e.target === overlay) {
     menu.classList.remove("active");
     overlay.classList.remove("active");
+  }
+});
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+document.addEventListener("click", (e) => {
+  const img = e.target.closest(".gallery img");
+  if (img) {
+    lightboxImg.src = img.src;
+    lightbox.classList.add("active");
+  }
+
+  if (e.target === lightbox) {
+    lightbox.classList.remove("active");
+    lightboxImg.src = "";
   }
 });
 
