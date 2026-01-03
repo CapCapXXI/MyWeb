@@ -483,10 +483,10 @@ hr {
 .censored::after{
   content: "";
   position: absolute;
-  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
-  background: #000;        /* чёрная полоска */
-  pointer-events: none;    /* не мешает клику */
-  z-index: 2;              /* поверх текста */
+  inset: 0;                 
+  background: #000;       
+  pointer-events: none;    
+  z-index: 2;              
 }
 
 @media (max-width: 900px), (orientation: landscape) and (max-width: 1024px) {
@@ -668,7 +668,7 @@ hr {
   .post {
     width: 90%;
     margin: 0px auto;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   .post:hover {
@@ -697,4 +697,5 @@ hr {
     max-width: 82px;
     max-height: 90px;
   }
+
 }
