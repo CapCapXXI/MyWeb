@@ -433,18 +433,6 @@ hr {
   text-decoration: underline;
 }
 
-.gallery {
-  display: flex;
-  flex-direction: row;
-}
-
-.gallery img {
-  max-width: 170px;
-  max-height: 170px;
-  border: 1px solid;
-  margin: 10px;
-}
-
 /* Затемнённый фон */
 .lightbox {
   position: fixed;
@@ -657,9 +645,6 @@ hr {
     padding-left: 0;
   }
 
-  .buttons ul {justify-content: center;}
-  .buttons a {display: flex; text-align: center;}
-
   .container_post {
     margin-top: 0px;
     flex-direction: column;
@@ -687,15 +672,5 @@ hr {
     letter-spacing: 0.03em;
     padding: 5px;
   }
-
-  .gallery {
-    flex-wrap: wrap;
-    padding: 5px;
-  }
-
-  .gallery img {
-    max-width: 82px;
-    max-height: 90px;
-  }
-
 }
+
